@@ -14,7 +14,7 @@ function App() {
       <header className="App-header">
         <h1>Presented facts might not be factual!</h1>
       </header>
-      <FactWindow type={'Funny'}/>
+      <FactWindow type={'Fun'}/>
       <FactWindow type={'Interesting'}/>
       <FactWindow type={'Creepy'}/>
     </div>

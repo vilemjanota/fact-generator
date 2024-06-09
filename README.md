@@ -1,8 +1,8 @@
 # Fact Generator
 
-This project is a fact generator that provides interesting, funny and creepy facts to users. It was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a fact generator that provides interesting, fun and creepy facts to users. It was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-The facts are stored in text files located in the `public` directory. Currently, there are three files: [Funny.txt](public/Funny.txt), [Interesting.txt](public/Interesting.txt) and [Creepy.txt](public/Creepy.txt).
+The facts are stored in text files located in the `public` directory. Currently, there are three files: [Fun.txt](public/Fun.txt), [Interesting.txt](public/Interesting.txt) and [Creepy.txt](public/Creepy.txt).
 
 The project is deployed [here](https://vilemjanota.github.io/fact-generator/).
 
