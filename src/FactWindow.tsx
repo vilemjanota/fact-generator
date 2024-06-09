@@ -30,8 +30,8 @@ function FactWindow(props:{type: string}) {
 
   return (
     <div className={props.type + "-window"}>
-      <button onClick={() => returnFact(props.type).then(setFact).catch(console.error)}>New {props.type} Fact!</button>
-      <div>{fact}</div>
+      <button className='Fact-button' onClick={() => returnFact(props.type).then(setFact).catch(console.error)}>New {props.type} Fact!</button>
+      <div className='Fact-text'><i>{fact}</i></div>
     </div>
   );
 }
