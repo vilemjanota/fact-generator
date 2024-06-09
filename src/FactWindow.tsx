@@ -1,5 +1,11 @@
 import React, { useState, useEffect } from 'react';
 
+/**
+ * Fetches a random fact from a text file based on the provided type.
+ * 
+ * @param {string} type - The type of fact to fetch.
+ * @returns {Promise<string>} A promise that resolves to a random fact.
+ */
 async function returnFact(type: string): Promise<string> {
   const response = await fetch(`/${type}.txt`);
   const text = await response.text();
@@ -8,6 +14,13 @@ async function returnFact(type: string): Promise<string> {
   return randomLine;
 }
 
+/**
+ * A React component that displays a random fact of a certain type.
+ * 
+ * @param {Object} props - The props for the component.
+ * @param {string} props.type - The type of fact to display.
+ * @returns {JSX.Element} A React element that displays a random fact and a button to fetch a new fact.
+ */
 function FactWindow(props:{type: string}) {
   const [fact, setFact] = useState<string | null>(null);
 
@@ -17,7 +30,7 @@ function FactWindow(props:{type: string}) {
 
   return (
     <div className={props.type + "-window"}>
-      <button onClick={() => returnFact(props.type).then(setFact).catch(console.error)}>Generate a {props.type} Fact!</button>
+      <button onClick={() => returnFact(props.type).then(setFact).catch(console.error)}>New {props.type} Fact!</button>
       <div>{fact}</div>
     </div>
   );
