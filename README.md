@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# Fact Generator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a fact generator that provides interesting and funny facts to users. It was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+The facts are stored in text files located in the `public` directory. Currently, there are two files: [Funny.txt](public/Funny.txt) and [Interesting.txt](public/Interesting.txt).
+
+The project is deployed [here](https://vilemjanota.github.io/fact-generator/) 
 
 ## Available Scripts
 
