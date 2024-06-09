@@ -7,7 +7,7 @@ import React, { useState, useEffect } from 'react';
  * @returns {Promise<string>} A promise that resolves to a random fact.
  */
 async function returnFact(type: string): Promise<string> {
-  const response = await fetch(`/${type}.txt`);
+  const response = await fetch(`/fact-generator/${type}.txt`);
   const text = await response.text();
   const lines = text.split('\n');
   const randomLine = lines[Math.floor(Math.random() * lines.length)];
